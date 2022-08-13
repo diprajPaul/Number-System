@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Conversion</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>Welcome to Number Base Conversion Page</h1>
+    <div id="container">
+      <div id="baseSelect">
+        <div id="baseInput">
+          <label for="inputSelect">From</label><br />
+          <select name="" id="inputSelect">
+            <option value="Choose">Please Select an option</option>
+            <option value="Binary">Binary</option>
+            <option value="Decimal">Decimal</option>
+            <option value="Octal">Octal</option>
+            <option value="Hexa Decimal">Hexa Decimal</option>
+          </select>
+        </div>
+        <div id="baseOutput">
+          <label for="outputSelect">To</label><br />
+          <select name="" id="outputSelect">
+            <option value="Choose">Please Select an option</option>
+            <option value="Binary">Binary</option>
+            <option value="Decimal">Decimal</option>
+            <option value="Octal">Octal</option>
+            <option value="Hexa Decimal">Hexa Decimal</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="inputOutputContainer">
+        <input
+          type="text"
+          disabled
+          placeholder="Please Select from above"
+          name=""
+          id="input"
+        />
+        <input
+          type="text"
+          disabled
+          placeholder="Please Select from above"
+          name=""
+          id="output"
+        />
+      </div>
+
+      <div id="buttonContainer">
+        <button type="button" disabled id="swap">Swap</button>
+        <button type="button" disabled id="convert">Convert</button>
+      </div>
+      <p id="error"></p>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
