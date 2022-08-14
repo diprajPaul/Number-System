@@ -148,8 +148,10 @@ const inputSelectStausCheck = () => {
     if (outputSelect.value != "Choose") {
       swap.disabled = false;
       swap.style.cursor = "pointer";
-      convert.disabled = false;
-      convert.style.cursor = "pointer";
+      if(input.value != ''){
+        convert.disabled = false;
+        convert.style.cursor = "pointer";
+      }
     }
   }
 };
